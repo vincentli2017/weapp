@@ -1,11 +1,14 @@
 // new.js
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    date:"2017-01-01",
+    name:"卧推",
+    value:"4*100"
   },
 
   /**
@@ -62,5 +65,17 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+
+  itemSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    // app.pushItem(e.detail.value)
+    // wx.navigateBack();
   }
 })
