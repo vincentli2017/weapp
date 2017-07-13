@@ -23,7 +23,14 @@ App({
     }
   },
 
+  pushItem: function (item) {
+    this.globalData.history.push(item)
+    console.log('刚刚添加了新的健身记录：', item)
+    console.log('最新历史记录为：',this.globalData.history)
+  },
+
   globalData: {
-    userInfo: null
+    userInfo: null,
+    history: [],
   }
 })

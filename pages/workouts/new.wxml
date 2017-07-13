@@ -6,22 +6,16 @@
       <view>{{date}}</view>
     </picker>
   </view>
-  <view wx:for="{{exercises}}">
-    <view class="field">
-    <text>训练名称</text>
-    <input name="name" placeholder="卧推" />
-  </view>
+
+  <view class="field">
+    <text>训练部位</text>
+    <input name="name" placeholder="胸" /></view>
 
   <view class="field">
     <text>训练量</text>
-    <textarea name="value" placeholder="4*100" />
-  </view>
-  </view>
+    <textarea name="value" placeholder="卧推：4*100" /></view>
 
-  
   <button class="btn-action btn-bottom" form-type="submit">提交</button>
 </form>
-
-<!-- <button class="btn-bottom-relative" bindtap="insert">增加</button> -->
 
 <!-- <button class="btn-action btn-bottom" form-type="submit">保存</button> -->

@@ -7,7 +7,7 @@ Page({
    */
   data: {
     date:"2017-01-01",
-    exercises: [{"name":"卧推", "value":"4 100"}]
+    exercises: {"name":"胸", "value":"卧推：4*100"}
   },
 
   /**
@@ -74,17 +74,15 @@ Page({
 
   itemSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    // app.pushItem(e.detail.value)
+    app.pushItem(e.detail.value)
     wx.navigateBack();
-  },
-
-  insert: function () {
-    var { date, exercises } = this.data;
-    var newData = { place: "default" };
-    lists.push(newData);
-    this.setData({
-      lists: lists,
-      itemCount: itemCount,
-    })  
   }
+
+  // insert: function () {
+  //   var ex = this.data.exercises;
+  //   ex.push(this.data.exercises.length);
+  //   this.setData({
+  //     exercises: ex
+  //   });
+  // }
 })

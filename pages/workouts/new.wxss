@@ -5,7 +5,7 @@ page{
 
 .field {
   background-color: white;
-   margin: 10rpx 0;
+  margin: 10rpx 0;
   padding: 20rpx 40rpx;   
 }
 
