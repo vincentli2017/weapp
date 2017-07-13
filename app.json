@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/workouts/workouts",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/history/history",
+    "pages/workouts/new"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史记录",
+        "iconPath": "images/history.png",
+        "selectedIconPath": "images/history-select.png"
+      },
+      {
+        "pagePath": "pages/workouts/workouts",
+        "text": "新建记录",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add-select.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

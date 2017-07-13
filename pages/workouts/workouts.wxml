@@ -1,0 +1,4 @@
+<!--workouts.wxml-->
+<text>workouts.wxml</text>
+
+<navigator url="new" class="btn-action btn-bottom">自定义</navigator>
