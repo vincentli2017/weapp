@@ -1,12 +1,4 @@
 <!--history.wxml-->
-<!-- <view wx:for="{{history}}">
-<view class="section">
-  <text> 日期: </text> <view class="history"> {{item.date}} </view>
-  <view class="history"> {{item.name}} </view>
-  <view class="history"> {{item.value}} </view>
-</view>
-</view> -->
-
 <view wx:for="{{history}}" class ="exercise">
   <form >
     <view class="field">
@@ -23,6 +15,5 @@
       <view class="title">训练量</view>
       <view class="value">{{item.value}}</view>
     </view>
-
 </form>
 </view>

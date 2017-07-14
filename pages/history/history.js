@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    history: [{"date":"2017-08-09","name":"test", "value":"12312 12312"}]
+    history: []
   },
 
   /**
@@ -27,7 +27,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var exercises = app.globalData.history.concat(this.data.history)
+    var exercises = app.globalData.history
     console.log('历史纪录为：', exercises)
     this.data.history = exercises
     this.setData({

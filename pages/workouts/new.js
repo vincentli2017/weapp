@@ -25,10 +25,21 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面显示
+   * 生命周期函数--监听页面显示 
+   * 当从routine中新建一个健身计划时， 更新默认列表的内容
    */
   onShow: function () {
-  
+    console.log('新建名称：', app.globalData.tempName)
+    console.log('新建量：', app.globalData.tempValue)
+    if (app.globalData.tempName != ""){
+      this.data.exercises.name = app.globalData.tempName
+    }
+    if (app.globalData.tempValue != "") {
+      this.data.exercises.value = app.globalData.tempValue
+    }
+    this.setData({
+      exercises: this.data.exercises
+    })
   },
 
   /**

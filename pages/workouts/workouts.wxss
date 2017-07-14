@@ -1,1 +1,27 @@
 /* workouts.wxss */
+page{
+    background-color:#fafafa;
+}
+
+.field {
+  background-color: white;
+  margin: 10rpx 0;
+  padding: 20rpx 40rpx;   
+}
+
+.field value {
+  text-align: left;
+}
+
+.field value {
+   margin-top: 20rpx; 
+}
+
+.title {
+  font-weight:bold;
+}
+
+.exercise {
+   border-top:1px solid blue;
+   border-bottom:1px solid blue；
+}

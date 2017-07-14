@@ -8,12 +8,17 @@
   </view>
 
   <view class="field">
+    <view class="section__title">是否保存为日常</view>
+    <switch name="switch"/>
+  </view>
+
+  <view class="field">
     <text>训练部位</text>
-    <input name="name" placeholder="胸" /></view>
+    <input name="name" value="{{exercises.name}}"/></view>
 
   <view class="field">
     <text>训练量</text>
-    <textarea name="value" placeholder="卧推：4*100" /></view>
+    <textarea name="value" value="{{exercises.value}}"/></view>
 
   <button class="btn-action btn-bottom" form-type="submit">提交</button>
 </form>

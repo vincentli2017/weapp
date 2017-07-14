@@ -1,11 +1,12 @@
 // workouts.js
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    routine: []
   },
 
   /**
@@ -26,7 +27,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var routine = app.globalData.routine
+    console.log('日常健身计划：', routine)
+    this.data.routine = routine
+    this.setData({
+      routine: routine,
+    })
   },
 
   /**
@@ -62,5 +68,13 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  formSubmit: function(e) {
+    console.log('根据日常训练，新建一个训练计划：', e.detail.value)
+    app.createNewExercises(e.detail.value)
+    wx.navigateTo({
+      url: 'new'
+    })
   }
 })

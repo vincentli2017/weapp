@@ -1,4 +1,19 @@
-<!--workouts.wxml-->
-<text>workouts.wxml</text>
+ <view wx:for="{{routine}}" class ="exercise">
+  <form bindsubmit="formSubmit">
+    <view class="field">
+      <view class="title">训练部位</view>
+      <input name="tempName" class="value" value="{{item.name}}"/>
+    </view>
+
+    <view class="field">
+      <view class="title">训练量</view>
+      <input name="tempValue" class="value" value="{{item.value}}"/>
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">开始训练</button>
+    </view>
+  </form>
+</view> 
 
 <navigator url="new" class="btn-action btn-bottom">自定义</navigator>
